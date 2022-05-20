@@ -1,8 +1,8 @@
-## Parte 3 - Uso de módulos, estructura y ciudades con sus coordenadas
+# Parte 3 - Uso de módulos, estructura y ciudades con sus coordenadas
 
 En la parte anterior desarrollamos en `Raku` una función básica denominada `get-url` para conectar y descargar el código HTML de una web mediante SSL. Esta función vamos a utilizarla con la URL `https://open-meteo.com/en/docs`. Descargado el contenido, lo analizaremos para obtener la información que relaciona las ciudades y sus coordenadas.
 
-### Un módulo para la función get-url
+## Un módulo para la función get-url
 
 Un código fácil de leer y de revisar separa el código principal de otras partes del código que realizan una tarea concreta más de una vez. Estas otras partes son funciones y su código va colocado en otros ficheros denominados librerías o `módulos` en el caso de `Raku`. Así, desde el código principal podemos cargar estos módulos (librerías) y utilizarlos las veces necesarias despejando el código principal.
 
@@ -74,7 +74,7 @@ Ya tenemos una estructura básica y operativa de la aplicación. Desde la línea
 
 Si todo es correcto aparecerá una respuesta similar a la que vimos antes, cuando ejecutamos la función `get-url` directamente.
 
-### Buscando ciudades y coordenadas
+## Buscando ciudades y coordenadas
 
 Adaptemos el código de `Eltiempo.raku` para descargar el código HTML de la web donde se encuentra la información de ciudades y coordenadas cuya URL es `https://open-meteo.com/en/docs`, y guardemos el código HTML descargado en el fichero `open-meteo.html`:
 
@@ -109,7 +109,7 @@ Si nos fijamos en la primera línea de las que hemos encontrado, vemos que comie
 
 También vemos en todas las líneas la existencia del atributo `data-asl`, pero no aporta nada.
 
-### Obteniendo ciudades y coordenadas con una gramática
+## Obteniendo ciudades y coordenadas con una gramática
 
 Sabemos que en el código HTML descargado existen líneas entre etiquetas `<option ... > ... </option>` que contienen una ciudad y sus coordenadas. También conocemos los elementos que tiene cada una de estas líneas. Pongamos estos elementos que pertenecen a una línea en la gramática `OPTION-CITIES`, en el token `TOP`:
 
