@@ -1,4 +1,4 @@
-# El tiempo y una introducción a Raku
+# El Tiempo y una introducción a Raku
 
 En este repositorio encontrarás un tutorial de introducción al lenguaje de programación `Raku` aplicado al desarrollo de una pequeña aplicación para obtener la temperatura actual de una ciudad. 
 
