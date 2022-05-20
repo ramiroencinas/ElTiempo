@@ -1,4 +1,4 @@
-## El menú y la temperatura
+# Parte 4 - El menú y la temperatura
 
 En la parte anterior utilizamos algunas funcionalidades básicas de `Raku` que incorporamos en nuestra aplicación:
 * Creamos un módulo de `Raku` para alojar y disponer de la función `get-url`
@@ -18,7 +18,7 @@ Con la latitud y la longitud de una ciudad construiremos la URL correspondiente,
 
 Pensemos ahora en cómo vamos a interaccionar con el usuario para pedirle una ciudad, obtener su temperatura y mostrársela.
 
-### Un menú para elegir una ciudad.
+## Un menú para elegir una ciudad.
 
 Tenemos 65 ciudades para mostrar al usuario y pedirle una de ellas. En esta situación y para facilitar la búsqueda y elección, asignaremos un número a cada ciudad y las mostraremos en cuatro columnas de forma ordenada, por número y también de forma alfabética, de la siguiente manera:
 ```
@@ -71,7 +71,7 @@ Enter city number to show the current temperature. Another number = exit:
 ```
 De esta manera mostramos la ciudad elegida y su temperatura. Además, pedimos de nuevo al usuario si quiere consultar la temperatura de otra ciudad, o si quiere salir de la aplicación.
 
-### Construyendo el menú
+## Construyendo el menú
 
 Como cada elemento del menú se compone de un número y una ciudad, necesitaremos otro hash que denominaremos `%cities-lat-lon-sorted` donde la clave será el número de la ciudad y el valor incluirá el nombre de una ciudad, su latitud y su longitud. Así, proporcionando al nuevo hash un número (desde el menú, como hemos visto), obtendremos automáticamente cualquiera de estos tres valores. Construiremos este nuevo hash a partir del que ya tenemos `%cities-lat-lon`.  
 
@@ -170,7 +170,7 @@ $city-number++;
 ```
 Aquí finaliza el bucle de creación del hash `%cities-lat-lon-sorted` y del `$menu`.
 
-### Visualizando y utilizando el menú
+## Visualizando y utilizando el menú
 
 Ya tenemos el `$menu` con todas las ciudades y su número correspondiente en cuatro columnas alineadas. Ahora lo visualizaremos dentro de un bucle mostrando al usuario un mensaje para que elija una ciudad e introduzca su número para obtener su temperatura actual.
 
@@ -261,7 +261,7 @@ Connection: close
 ```
 Como vemos, la temperatura es el número `17` expresado de forma única dentro de `"temperature":17`, y el token `/\"temperature\"\:<( \-? \d+ [\. \d+]? )>/` captura ese `17` dejándolo en `$temperature`.
 
-### Mostrando la temperatura
+## Mostrando la temperatura
 Ya hemos cumplido la parte más complicada del objetivo de la aplicación que es obtener la temperatura actual de una ciudad elegida por el usuario, ahora se la mostraremos :
 ```raku
 shell 'clear';
@@ -372,7 +372,7 @@ while $op >= 1 and $op <= %cities-lat-lon-sorted.elems {
 }
 ```
 
-### Epílogo
+## Epílogo
 Ya hemos llegado al final de esta serie de posts donde hemos desarrollado una aplicación de línea de comandos en Linux para obtener la temperatura actual de una ciudad.
 
 También hemos aprendido varias cosas interesantes de `Raku` para:
