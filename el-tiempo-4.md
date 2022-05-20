@@ -18,7 +18,7 @@ Con la latitud y la longitud de una ciudad construiremos la URL correspondiente,
 
 Pensemos ahora en cómo vamos a interaccionar con el usuario para pedirle una ciudad, obtener su temperatura y mostrársela.
 
-## Un menú para elegir una ciudad.
+## Un menú para elegir una ciudad
 
 Tenemos 65 ciudades para mostrar al usuario y pedirle una de ellas. En esta situación y para facilitar la búsqueda y elección, asignaremos un número a cada ciudad y las mostraremos en cuatro columnas de forma ordenada, por número y también de forma alfabética, de la siguiente manera:
 ```
@@ -381,5 +381,3 @@ También hemos aprendido varias cosas interesantes de `Raku` para:
 * Utilizar gramáticas para validar y obtener información de forma precisa
 * Crear y utilizar hashes para guardar y recuperar rápidamente información
 * Interaccionar con el usuario mediante un menú de texto
-
-
