@@ -9,7 +9,11 @@ Este tutorial se divide en las siguientes partes:
 * [Parte 3 - Uso de módulos, estructura y ciudades con sus coordenadas](el-tiempo-3.md)
 * [Parte 4 - El menú y la temperatura](el-tiempo-4.md)
 
-Todo el código del tutorial se encuentra en este mismo repositorio y funciona en cualquier distribución GNU/Linux que tenga debidamente instalado `Raku`, el gestor de módulos `Zef` y un módulo necesario. En la parte 2 encontrarás orientaciones para reunir los requisitos y realizar las instalaciones necesarias.
+Todo el código del tutorial se encuentra en este mismo repositorio y funciona en cualquier distribución GNU/Linux que tenga debidamente instalado `Raku`, el gestor de módulos `Zef` y un módulo necesario. Una vez clonado este repositorio en un entorno que cumpla los requisitos, la ejecución de la aplicación es tan sencilla como acceder a la carpeta del repositorio y ejecutar la siguiente línea de comando:
+```
+raku ElTiempo.raku
+```
+En la parte 2 encontrarás orientaciones para reunir los requisitos y realizar las instalaciones necesarias.
 
 Agradezco al equipo de desarrollo de https://open-meteo.com su autorización para utilizar, tanto su código HTML para alimentar a esta aplicación como al acceso a su API para obtener la información de clima.
 
