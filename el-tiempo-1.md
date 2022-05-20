@@ -1,4 +1,4 @@
-# El tiempo
+# Parte 1 - El Tiempo
 
 Conocer la temperatura del lugar donde uno se encuentra antes de salir a la calle es importante.
 
@@ -48,4 +48,4 @@ Como hemos visto antes en la web https://open-meteo.com/en/docs, puedes elegir u
 ```
 Como vemos, cada etiqueta `<option>` tiene las coordenadas de cada ciudad en los atributos `data-latitude` y `data-longitude`.
 
-Llegados aquí, ya tenemos toda la información para plantear la estructura de la aplicación, que veremos en la siguiente parte.
+Llegados aquí, ya tenemos toda la información para plantear la estructura de la aplicación, que veremos en la [Parte 2](el-tiempo-2.md).
