@@ -1,4 +1,4 @@
-## Uso de módulos, estructura y ciudades con sus coordenadas
+## Parte 3 - Uso de módulos, estructura y ciudades con sus coordenadas
 
 En la parte anterior desarrollamos en `Raku` una función básica denominada `get-url` para conectar y descargar el código HTML de una web mediante SSL. Esta función vamos a utilizarla con la URL `https://open-meteo.com/en/docs`. Descargado el contenido, lo analizaremos para obtener la información que relaciona las ciudades y sus coordenadas.
 
@@ -307,4 +307,4 @@ Hemos llegado al final de esta tercera parte donde hemos visto varias cosas inte
 * Creación y uso de gramáticas `Raku` para filtrar la información descargada y obtener información precisa
 * Creación y uso de un hash para disponer de dicha información
 
-En la siguiente y última parte ampliaremos estos conocimientos de `Raku` desarrollando un menú de ciudades, llevar a cabo los pasos del 3 al 7 y finalizar la aplicación.
+En la siguiente [Parte 4](el-tiempo-4.md), que será la última, ampliaremos estos conocimientos de `Raku` desarrollando un menú de ciudades, llevar a cabo los pasos del 3 al 7 y finalizar la aplicación.
