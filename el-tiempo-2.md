@@ -259,4 +259,4 @@ Connection: close
 
 Las primeras cinco líneas representan la cabecera de la respuesta HTTP enviada por el servidor web, proporcionando la información de estado de la respuesta. Después viene una línea en blanco y después viene la línea con el cuerpo de la respuesta en sí en formato JSON, incluyendo la información que buscamos. Si bien esta es la información *en bruto*, después es necesario filtrarla para obtener la temperatura, operación que veremos más adelante.
 
-Ya tenemos una función básica de conexión que utilizaremos en los pasos 1 y 8 que vimos al principio de esta parte. En la [Parte 3](el-tiempo-3.md) profundizaremos en el paso 1 utilizando esta función para conectar con la web `https://open-meteo.com/en/docs` y obtener las ciudades y sus coordenadas.
+Ya tenemos una función básica de conexión que utilizaremos en los pasos 1 y 6 que vimos al principio de esta parte. En la [Parte 3](el-tiempo-3.md) profundizaremos en el paso 1 utilizando esta función para conectar con la web `https://open-meteo.com/en/docs` y obtener las ciudades y sus coordenadas.
