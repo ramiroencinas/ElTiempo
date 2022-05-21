@@ -4,7 +4,7 @@ En la parte anterior desarrollamos en `Raku` una función básica denominada `ge
 
 ## Un módulo para la función get-url
 
-Un código fácil de leer y de revisar separa el código principal de otras partes del código que realizan una tarea concreta más de una vez. Estas otras partes son funciones y su código va colocado en otros ficheros denominados librerías o `módulos` en el caso de `Raku`. Así, desde el código principal podemos cargar estos módulos (librerías) y utilizarlos las veces necesarias despejando el código principal.
+Un código fácil de leer y de revisar separa el código principal de otras partes del código que realizan una tarea concreta más de una vez. En `Raku` puede realizarse esta separación mediante funciones cuyo código va colocado en otros ficheros denominados `módulos` que actúan como librerías. Así, desde el código principal podemos cargar funciones alojadas en módulos y utilizarlas las veces necesarias despejando el código principal.
 
 Para crear un nuevo módulo con la función `get-url`, primero es necesario disponer de una estructura de carpetas y ficheros para la aplicación. Para comenzar, creamos una carpeta principal para la aplicación, denominada `ElTiempo`. Dentro de esta carpeta creamos otra carpeta denominada `lib` donde alojaremos los ficheros de módulos o librerías y dentro de esta carpeta creamos un nuevo fichero denominado `GetURL.rakumod` que contendrá el código de un módulo de `Raku`, concretamente el de la función `get-url` que vimos en la parte anterior, pero ligeramente adaptado. El código de `GetURL.rakumod` es el siguiente:
 
