@@ -20,7 +20,7 @@ Pensemos ahora en cómo vamos a interaccionar con el usuario para pedirle una ci
 
 ## Un menú para elegir una ciudad
 
-Tenemos 65 ciudades para mostrar al usuario y pedirle una de ellas. En esta situación y para facilitar la búsqueda y elección, mostraremos las ciudades ordenadas alfabéticamente y a cada una le asignaremos un número consecutivo a su izquierda. Para que el menú no exceda los límites verticales de la pantalla, mostraremos las ciudades distribuidas en cuatro columnas, de la siguiente manera:
+Tenemos 65 ciudades para mostrar al usuario y pedirle una de ellas. En esta situación y para facilitar la búsqueda y elección, mostraremos las ciudades ordenadas alfabéticamente y numeradas. Para que el menú no exceda los límites verticales de la pantalla, mostraremos las ciudades distribuidas en cuatro columnas, de la siguiente manera:
 ```
  1 Abu Dhabi         2 Algiers           3 Amsterdam         4 Ankara           
  5 Asuncion          6 Athens            7 Baghdad           8 Berlin           
@@ -73,7 +73,7 @@ De esta manera mostramos la ciudad elegida y su temperatura. Además, pedimos de
 
 ## Construyendo el menú
 
-Como cada elemento del menú se compone de un número y una ciudad, necesitaremos otro hash que denominaremos `%cities-lat-lon-sorted` donde guardaremos cada uno de estos elementos ordenados alfabéticamente por el nombre de ciudad. Esta ordenación alfabética de ciudades es fundamental para construir el menú como veremos después. Dentro de este hash, la clave de cada elemento será el número de la ciudad y el valor correspondiente incluirá el nombre de una ciudad, su latitud y su longitud. Así, proporcionando al nuevo hash un número (desde el menú, como hemos visto), obtendremos automáticamente cualquiera de estos tres valores. Construiremos este nuevo hash a partir del que ya tenemos `%cities-lat-lon`.  
+Como cada elemento del menú se compone de una ciudad numerada, necesitaremos otro hash que denominaremos `%cities-lat-lon-sorted` donde guardaremos cada uno de estos elementos ordenados alfabéticamente por el nombre de ciudad. Esta ordenación alfabética de ciudades es fundamental para construir el menú como veremos después. Dentro de este hash, la clave de cada elemento será el número de la ciudad y el valor correspondiente incluirá el nombre de una ciudad, su latitud y su longitud. Así, proporcionando al nuevo hash un número (desde el menú, como hemos visto), obtendremos automáticamente cualquiera de estos tres valores. Construiremos este nuevo hash a partir del que ya tenemos `%cities-lat-lon`.  
 
 Además, aprovecharemos la construcción del nuevo hash para construir también el menú en una variable de texto denominada `$menu` donde necesitaremos también otras variables de apoyo:
 ```raku
@@ -84,7 +84,7 @@ my $city-number = 1;
 ```
 Como vemos, `$menu` comienza con una línea en blanco `"\n"`. Con esto dejamos un oportuno espacio superior por encima del menú para facilitar su visualización.
 
-El número de columnas `4` del menú irá en `$menu-cols;`. 
+El número de columnas `4` del menú irá en la variable `$menu-cols`. 
 
 Para saltar de línea al llegar a la cuarta ciudad de una línea utilizaremos `$last-col` que comenzará con la columna `4` que a su vez viene de `$menu-cols`.
 
@@ -126,7 +126,9 @@ take $city-number => {
     'longitude' => $data.<longitude>
 }
 ```
-En la primera vuelta ya tenemos el primer elemento con clave `1` del nuevo hash. A continuación agregaremos el primer elemento del `$menu` que será:
+En la primera vuelta ya tenemos el primer elemento con clave `1` del nuevo hash. 
+
+En este preciso momento empezaremos a introducir las ciudades alfabéticamente numeradas en el `$menu` comenzando por la primera que será:
 ```
 1 Abu Dhabi
 ```
